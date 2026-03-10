@@ -1,0 +1,11 @@
+# 학습 진도 파일 (개인별 생성)
+.cc-tutor-progress.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
