@@ -1,0 +1,142 @@
+# Module 3: CLAUDE.md
+
+> 공식 문서: https://code.claude.com/docs/ko/memory
+> 공식 문서: https://code.claude.com/docs/ko/features-overview#기능을-목표에-맞추기
+
+## WHY
+
+{name} {title}님, {team}에 새 컨설턴트가 들어오면 제일 먼저 뭘 알려주시나요?
+
+제안서 톤앤매너, 고객 응대 원칙, 자주 쓰는 강사 풀, 금액 산정 기준... 이런 팀 규칙을 매번 말로 전달하시죠? **CLAUDE.md는 Claude에게 이걸 한 번 알려주면 영원히 기억하게 하는 것**입니다.
+
+**Before:** 매번 "존댓말로 써줘", "표로 정리해줘", "고객 과제부터 시작해" 반복
+**After:** CLAUDE.md에 한 번 저장 → 모든 세션에서 자동 적용
+
+## EXPLAIN
+
+### 1. CLAUDE.md — 내가 쓰는 지시문
+
+| 항목 | 내용 |
+|------|------|
+| 비유 | **팀 제안서 가이드라인** — Claude가 매 대화 시작할 때 읽는 규칙서 |
+| 근본 원리 | 시스템 프롬프트 — AI가 대화를 시작할 때 가장 먼저 읽는 지시문 |
+| 예시 | "항상 존댓말로", "제안서는 고객 과제부터 시작", "금액은 VAT 별도로 표기" |
+
+```
+세션 시작
+  │
+  ▼
+┌─────────────┐     ┌─────────────┐
+│ CLAUDE.md   │────▶│ 시스템       │────▶ Claude가 규칙을 아는 상태로 대화 시작
+│ (내 지시문)  │     │ 프롬프트     │
+└─────────────┘     └─────────────┘
+  항상 읽힘            매번 자동 주입
+```
+
+### 2. Auto Memory — Claude가 스스로 적는 메모
+
+| 항목 | 내용 |
+|------|------|
+| 비유 | **Claude의 업무 수첩** — 일하면서 적어두는 자기 노트 |
+| CLAUDE.md와 차이 | CLAUDE.md는 **내가** Claude에게 주는 규칙. Auto Memory는 **Claude가** 스스로 적는 메모 |
+| 저장 위치 | `~/.claude/projects/<프로젝트>/memory/` |
+
+**Auto Memory가 기록하는 것들:**
+- 프로젝트 패턴: 자주 쓰는 파일 구조, 명명 규칙
+- 디버깅 인사이트: 까다로운 문제의 해결법
+- 내 선호사항: 소통 방식, 워크플로우 습관
+
+### 3. 계층 구조
+
+CLAUDE.md는 여러 레벨에 둘 수 있습니다:
+
+| 레벨 | 위치 | 비유 |
+|------|------|------|
+| 글로벌 | `~/.claude/CLAUDE.md` | 회사 전체 규칙 (회사 공통) |
+| 프로젝트 | 프로젝트 폴더의 `CLAUDE.md` | 팀 규칙 ({team} 전용) |
+
+## EXECUTE
+
+아래 순서대로 실행해보세요:
+
+**실습 1: /init으로 CLAUDE.md 자동 생성**
+
+    /init
+
+현재 폴더를 분석해서 CLAUDE.md를 자동으로 생성해줍니다.
+
+**실습 2: CLAUDE.md에 컨설팅 규칙 추가**
+
+Claude에게 이렇게 요청하세요:
+
+    CLAUDE.md에 다음 규칙들을 추가해줘:
+
+    ## 제안서 작성 규칙
+    - 항상 존댓말로 작성
+    - 제안서 구조: 고객 과제 → 교육 목표 → 커리큘럼 → 강사진 → 일정/예산 → 기대 효과
+    - 금액은 VAT 별도로 표기
+    - 고객사명은 정식 명칭 사용 (예: 삼성전자 주식회사)
+
+    ## 강사 분류 체계
+    - AI/DT: AI 전문가, DT 컨설턴트
+    - 리더십: 리더십 코치, 조직 개발 전문가
+    - 직무: 직무별 현업 실무자
+
+**실습 3: /memory로 확인**
+
+    /memory
+
+CLAUDE.md와 Auto Memory 파일들을 확인해보세요.
+
+**실습 4: Auto Memory 직접 체험**
+
+Claude Code에 이렇게 말해보세요:
+
+    나는 {name}이고, {team} 소속이야. 제안서 쓸 때 항상 고객의 비즈니스 임팩트를 먼저 강조하는 걸 좋아해. 이걸 기억해둬.
+
+`/memory`로 저장된 내용을 확인해보세요.
+
+## QUIZ
+
+```json
+AskUserQuestion({
+  "questions": [{
+    "question": "CLAUDE.md와 Auto Memory의 차이는 무엇인가요?",
+    "header": "Quiz 3-1",
+    "options": [
+      {"label": "CLAUDE.md는 내가 쓰고, Auto Memory는 Claude가 쓴다", "description": "각각 작성 주체가 다르다"},
+      {"label": "같은 파일의 다른 이름이다", "description": "이름만 다른 같은 기능?"},
+      {"label": "Auto Memory는 한 번만 읽힌다", "description": "매 세션마다 읽히는지?"}
+    ],
+    "multiSelect": false
+  }]
+})
+```
+
+정답: 1번. CLAUDE.md는 **내가 Claude에게 주는 지시문**(제안서 가이드라인)이고, Auto Memory는 **Claude가 작업하면서 스스로 기록하는 메모**(업무 수첩)입니다. 둘 다 매 세션 시작 시 자동으로 읽힙니다.
+
+```json
+AskUserQuestion({
+  "questions": [{
+    "question": "제안서를 항상 '고객 과제 → 교육 목표 → 커리큘럼' 순서로 쓰게 하려면 어디에 규칙을 넣나요?",
+    "header": "Quiz 3-2",
+    "options": [
+      {"label": "CLAUDE.md", "description": "내가 Claude에게 주는 규칙서"},
+      {"label": "Auto Memory", "description": "Claude가 스스로 적는 메모"},
+      {"label": "매번 대화로 알려준다", "description": "반복 지시"}
+    ],
+    "multiSelect": false
+  }]
+})
+```
+
+정답: 1번. 팀 규칙처럼 항상 적용되어야 하는 것은 CLAUDE.md에 넣습니다. 매번 말할 필요가 없어집니다.
+
+## LEADER-TIP
+
+> 💡 **{name} {title}님을 위한 리더 팁**
+>
+> - **팀 공용 CLAUDE.md를 만드세요** — 모든 팀원의 Claude가 같은 제안서 규칙을 따르게 됩니다
+> - {leader} 팀장님과 함께 **"{team} 제안서 5대 원칙"**을 정해서 CLAUDE.md에 넣어보세요
+> - 팀원별로 개인 CLAUDE.md도 만들게 하세요 — 개인 선호사항은 개인 파일에, 팀 규칙은 팀 파일에
+> - 📄 **제안서 기초 배지를 획득했습니다!** 이제 Claude가 {team}의 제안서 규칙을 기억합니다
