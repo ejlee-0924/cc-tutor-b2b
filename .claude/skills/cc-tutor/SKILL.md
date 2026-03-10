@@ -173,21 +173,21 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 | # | 모듈명 | 레퍼런스 파일 | 해금 조건 |
 |---|--------|--------------|-----------|
-| 1 | Claude Code 시작하기 | `references/mod-01-start.md` | 항상 열림 |
-| 2 | 프롬프트 기초 | `references/mod-02-prompt.md` | 모듈 1 완료 |
-| 3 | 제안서 초안 작성 | `references/mod-03-proposal.md` | 모듈 2 완료 |
-| 4 | 콘텐츠 분석과 요약 | `references/mod-04-digest.md` | 모듈 3 완료 |
-| 5 | 워크플로 자동화 | `references/mod-05-workflow.md` | 모듈 4 완료 |
+| 1 | Setup & 첫 대화 | `references/module-01-setup.md` | 항상 열림 |
+| 2 | 파일 다루기 | `references/module-02-files.md` | 모듈 1 완료 |
+| 3 | CLAUDE.md | `references/module-03-claudemd.md` | 모듈 2 완료 |
+| 4 | Skill 사용 | `references/module-04-skill.md` | 모듈 3 완료 |
+| 5 | Subagent | `references/module-05-subagent.md` | 모듈 4 완료 |
 
 ### Advanced (모듈 6–10): Essential 완료 후 자유 선택
 
 | # | 모듈명 | 레퍼런스 파일 | 추천 선행 |
 |---|--------|--------------|-----------|
-| 6 | CLAUDE.md 설계 | `references/mod-06-claudemd.md` | — |
-| 7 | 커스텀 슬래시 명령 | `references/mod-07-slash.md` | — |
-| 8 | 나만의 스킬 만들기 | `references/mod-08-skill.md` | 모듈 7 권장 |
-| 9 | 팀 온보딩 설계 | `references/mod-09-onboarding.md` | — |
-| 10 | 팀 운영 가이드 제작 | `references/mod-10-team-guide.md` | 모듈 9 권장 |
+| 6 | MCP + Context Sync | `references/module-06-mcp-context-sync.md` | — |
+| 7 | Plugin + Clarify | `references/module-07-plugin-clarify.md` | — |
+| 8 | skill-creator | `references/module-08-skill-creator.md` | 모듈 7 권장 |
+| 9 | Agent Teams | `references/module-09-agent-teams.md` | — |
+| 10 | 팀 전파 + GitHub | `references/module-10-team-deploy.md` | 모듈 9 권장 |
 
 ### 잠금 로직 상세
 
@@ -200,7 +200,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 - 추천 선행이 있는 경우 (8→7, 10→9) 안내 메시지를 표시하되 **강제 잠금하지 않음**
 - 추천 선행 미완료 시 안내:
 
-      💡 모듈 7(커스텀 슬래시 명령)을 먼저 학습하면 이해가 더 쉬워요!
+      💡 모듈 7(Plugin + Clarify)을 먼저 학습하면 이해가 더 쉬워요!
       그래도 바로 시작할까요? (예/아니오)
 
 ---
@@ -299,18 +299,18 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
     📖 전체 목차
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━
     [Essential]
-    ✅ 1. Claude Code 시작하기
-    🔄 2. 프롬프트 기초
-    🔒 3. 제안서 초안 작성
-    🔒 4. 콘텐츠 분석과 요약
-    🔒 5. 워크플로 자동화
+    ✅ 1. Setup & 첫 대화
+    🔄 2. 파일 다루기
+    🔒 3. CLAUDE.md
+    🔒 4. Skill 사용
+    🔒 5. Subagent
 
     [Advanced] — Essential 완료 후 해금
-    🔒 6. CLAUDE.md 설계
-    🔒 7. 커스텀 슬래시 명령
-    🔒 8. 나만의 스킬 만들기 (7 권장)
-    🔒 9. 팀 온보딩 설계
-    🔒 10. 팀 운영 가이드 제작 (9 권장)
+    🔒 6. MCP + Context Sync
+    🔒 7. Plugin + Clarify
+    🔒 8. skill-creator (7 권장)
+    🔒 9. Agent Teams
+    🔒 10. 팀 전파 + GitHub (9 권장)
 
 ### "그만" / "quit" 감지 시
 
@@ -330,7 +330,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 ## 7. 모듈별 특수 규칙
 
-### 모듈 1: Claude Code 시작하기
+### 모듈 1: Setup & 첫 대화
 
 - **퀴즈 없음** — Phase B에서 퀴즈를 출제하지 않는다.
 - Phase B에서는 완료 확인만 수행:
@@ -340,35 +340,34 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 - `quiz_score`와 `quiz_total`은 모두 0으로 기록한다.
 - LEADER-TIP은 정상적으로 전달한다.
 
-### 모듈 4: 콘텐츠 분석과 요약
+### 모듈 4: Skill 사용
 
 - EXECUTE 단계에서 **Content Digest 스킬 체험**을 포함한다.
 - 학습자가 실제 URL이나 문서를 제공하면 요약 실습을 진행한다.
 
-### 모듈 9: 팀 온보딩 설계 (4개 서브스텝)
+### 모듈 9: Agent Teams (3개 서브스텝)
 
-모듈 9는 4개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
+모듈 9는 3개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
 
 | 서브스텝 | 내용 | 레퍼런스 섹션 |
 |---------|------|--------------|
-| 9-1 | 온보딩 체크리스트 설계 | `mod-09-onboarding.md` 내 STEP-1 |
-| 9-2 | 환경 설정 가이드 작성 | `mod-09-onboarding.md` 내 STEP-2 |
-| 9-3 | 첫 주 미션 설계 | `mod-09-onboarding.md` 내 STEP-3 |
-| 9-4 | 온보딩 문서 통합 | `mod-09-onboarding.md` 내 STEP-4 |
+| 9-2 | 제안서 파이프라인 TF 구성 | `module-09-agent-teams.md` 내 실습 9-2 |
+| 9-3 | 의사결정 검증 | `module-09-agent-teams.md` 내 실습 9-3 |
+| 9-4 | 확장 설계 | `module-09-agent-teams.md` 내 실습 9-4 |
 
 진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"9-2"`).
 모듈 9 전체 완료는 9-4 Phase B 완료 시점이다.
 
-### 모듈 10: 팀 운영 가이드 제작 (4개 서브스텝)
+### 모듈 10: 팀 전파 + GitHub (4개 서브스텝)
 
 모듈 10은 4개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
 
 | 서브스텝 | 내용 | 레퍼런스 섹션 |
 |---------|------|--------------|
-| 10-1 | 팀 컨벤션 정의 | `mod-10-team-guide.md` 내 STEP-1 |
-| 10-2 | 공유 스킬 라이브러리 구성 | `mod-10-team-guide.md` 내 STEP-2 |
-| 10-3 | 팀 워크플로 설계 | `mod-10-team-guide.md` 내 STEP-3 |
-| 10-4 | 운영 가이드 문서화 | `mod-10-team-guide.md` 내 STEP-4 |
+| 10-1 | Compound + Session Wrap | `module-10-team-deploy.md` 내 실습 10-1 |
+| 10-2 | GitHub 기초 | `module-10-team-deploy.md` 내 실습 10-2 |
+| 10-3 | 팀 스킬 배포 | `module-10-team-deploy.md` 내 실습 10-3 |
+| 10-4 | 팀 온보딩 설계 | `module-10-team-deploy.md` 내 실습 10-4 |
 
 진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"10-3"`).
 모듈 10 전체 완료는 10-4 Phase B 완료 시점이다.
