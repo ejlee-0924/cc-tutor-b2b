@@ -174,7 +174,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 | # | 모듈명 | 레퍼런스 파일 | 해금 조건 |
 |---|--------|--------------|-----------|
 | 1 | Setup & 첫 대화 | `references/module-01-setup.md` | 항상 열림 |
-| 2 | 파일 다루기 | `references/module-02-files.md` | 모듈 1 완료 |
+| 2 | 파일 다루기 + 스마트 조작법 | `references/module-02-files.md` | 모듈 1 완료 |
 | 3 | CLAUDE.md | `references/module-03-claudemd.md` | 모듈 2 완료 |
 | 4 | Skill 사용 | `references/module-04-skill.md` | 모듈 3 완료 |
 | 5 | Subagent | `references/module-05-subagent.md` | 모듈 4 완료 |
@@ -300,7 +300,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━
     [Essential]
     ✅ 1. Setup & 첫 대화
-    🔄 2. 파일 다루기
+    🔄 2. 파일 다루기 + 스마트 조작법
     🔒 3. CLAUDE.md
     🔒 4. Skill 사용
     🔒 5. Subagent
