@@ -165,6 +165,16 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 수동 입력 시 `colleagues`는 빈 배열, `leader`와 `group_leader`는 "미확인"으로 설정한다.
 
+**`{leader}` 자기참조 방지:**
+
+- `name == leader`인 경우 (학습자 본인이 팀장), 시나리오에서 `{leader}`를 사용하지 않는다.
+- 대신 `{group_leader}` 또는 "팀원들"로 대체한다.
+
+**`{colleagues}` 빈 배열 방어:**
+
+- `colleagues`가 빈 배열이면 동료 이름을 포함하는 시나리오를 생성하지 않는다.
+- 대신 "팀원", "동료" 등 일반 표현을 사용한다.
+
 ---
 
 ## 4. 모듈 목록 및 잠금 규칙
@@ -247,7 +257,9 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 | 🔧 시작 | 모듈 1 완료 | `start` |
 | 📄 제안서 기초 | 모듈 3 완료 | `proposal-basics` |
 | 🏆 Essential 완료 | 모듈 5 완료 | `essential-complete` |
+| 📋 요구사항 전문가 | 모듈 7 완료 | `requirements-expert` |
 | ⚡ 스킬 메이커 | 모듈 8 완료 | `skill-maker` |
+| 🤝 팀 아키텍트 | 모듈 9 완료 | `team-architect` |
 | 🎖️ 팀 리더 | 모듈 10 완료 | `team-leader` |
 
 배지 획득 시 축하 메시지:
