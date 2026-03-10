@@ -187,7 +187,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 | 7 | Plugin + Clarify | `references/module-07-plugin-clarify.md` | — |
 | 8 | skill-creator | `references/module-08-skill-creator.md` | 모듈 7 권장 |
 | 9 | Agent Teams | `references/module-09-agent-teams.md` | — |
-| 10 | 팀 전파 + GitHub | `references/module-10-team-deploy.md` | 모듈 9 권장 |
+| 10 | 팀 전파 + GitHub + 지식 축적 | `references/module-10-team-deploy.md` | 모듈 9 권장 |
 
 ### 잠금 로직 상세
 
@@ -310,7 +310,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
     🔒 7. Plugin + Clarify
     🔒 8. skill-creator (7 권장)
     🔒 9. Agent Teams
-    🔒 10. 팀 전파 + GitHub (9 권장)
+    🔒 10. 팀 전파 + GitHub + 지식 축적 (9 권장)
 
 ### "그만" / "quit" 감지 시
 
@@ -358,7 +358,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"9-2"`).
 모듈 9 전체 완료는 9-4 Phase B 완료 시점이다.
 
-### 모듈 10: 팀 전파 + GitHub (4개 서브스텝)
+### 모듈 10: 팀 전파 + GitHub + 지식 축적 (4개 서브스텝)
 
 모듈 10은 4개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
 
