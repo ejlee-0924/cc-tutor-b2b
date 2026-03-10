@@ -254,13 +254,13 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 | 배지 | 조건 | 키 |
 |------|------|-----|
-| 🔧 시작 | 모듈 1 완료 | `start` |
-| 📄 제안서 기초 | 모듈 3 완료 | `proposal-basics` |
-| 🏆 Essential 완료 | 모듈 5 완료 | `essential-complete` |
-| 📋 요구사항 전문가 | 모듈 7 완료 | `requirements-expert` |
-| ⚡ 스킬 메이커 | 모듈 8 완료 | `skill-maker` |
-| 🤝 팀 아키텍트 | 모듈 9 완료 | `team-architect` |
-| 🎖️ 팀 리더 | 모듈 10 완료 | `team-leader` |
+| 🌱 입문자 | 모듈 1 완료 | `beginner` |
+| 📄 실무 기초 | 모듈 3 완료 | `foundation` |
+| 🏆 AI 실무자 | 모듈 5 완료 | `ai-practitioner` |
+| 📋 분석가 | 모듈 7 완료 | `analyst` |
+| ⚡ AI 빌더 | 모듈 8 완료 | `ai-builder` |
+| 🤝 AI 설계자 | 모듈 9 완료 | `ai-architect` |
+| 🎖️ AI 전도사 | 모듈 10 완료 | `ai-evangelist` |
 
 배지 획득 시 축하 메시지:
 
