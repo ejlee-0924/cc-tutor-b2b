@@ -36,14 +36,14 @@ Claude Code에서 아래 중 하나를 입력하세요:
 | 1 | Setup & 첫 대화 | Claude Code 설치, 기본 대화 | 🌱 입문자 |
 | 2 | 파일 다루기 + 스마트 조작법 | Read/Write/Glob/Grep, Plan 모드, Think harder | — |
 | 3 | CLAUDE.md | 팀 규칙 설정, Auto Memory | 📄 실무 기초 |
-| 4 | Skill 사용 | 스킬 설치/호출, Pre-built 스킬 | — |
+| 4 | MCP + Context Sync | 외부 시스템 연동 | — |
 | 5 | Subagent | 병렬 작업, 에이전트 지시 | 🏆 AI 실무자 |
 
 ### Advanced (자유 선택)
 
 | # | 모듈 | 배우는 것 | 배지 |
 |---|------|----------|------|
-| 6 | MCP + Context Sync | 외부 시스템 연동 | — |
+| 6 | Skill 사용 | 스킬 설치/호출, Pre-built 스킬 | — |
 | 7 | Plugin + Clarify | 요구사항 구조화 | 📋 분석가 |
 | 8 | skill-creator | 나만의 스킬 만들기 | ⚡ AI 빌더 |
 | 9 | Agent Teams | AI TF 구성, 의사결정 검증 | 🤝 AI 설계자 |

@@ -187,14 +187,14 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 | 1 | Setup & 첫 대화 | `references/module-01-setup.md` | 항상 열림 |
 | 2 | 파일 다루기 + 스마트 조작법 | `references/module-02-files.md` | 모듈 1 완료 |
 | 3 | CLAUDE.md | `references/module-03-claudemd.md` | 모듈 2 완료 |
-| 4 | Skill 사용 | `references/module-04-skill.md` | 모듈 3 완료 |
+| 4 | MCP + Context Sync | `references/module-06-mcp-context-sync.md` | 모듈 3 완료 |
 | 5 | Subagent | `references/module-05-subagent.md` | 모듈 4 완료 |
 
 ### Advanced (모듈 6–10): Essential 완료 후 자유 선택
 
 | # | 모듈명 | 레퍼런스 파일 | 추천 선행 |
 |---|--------|--------------|-----------|
-| 6 | MCP + Context Sync | `references/module-06-mcp-context-sync.md` | — |
+| 6 | Skill 사용 | `references/module-04-skill.md` | — |
 | 7 | Plugin + Clarify | `references/module-07-plugin-clarify.md` | — |
 | 8 | skill-creator | `references/module-08-skill-creator.md` | 모듈 7 권장 |
 | 9 | Agent Teams | `references/module-09-agent-teams.md` | — |
@@ -353,7 +353,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 - `quiz_score`와 `quiz_total`은 모두 0으로 기록한다.
 - LEADER-TIP은 정상적으로 전달한다.
 
-### 모듈 4: Skill 사용
+### 모듈 6: Skill 사용
 
 - EXECUTE 단계에서 **Content Digest 스킬 체험**을 포함한다.
 - 학습자가 실제 URL이나 문서를 제공하면 요약 실습을 진행한다.
