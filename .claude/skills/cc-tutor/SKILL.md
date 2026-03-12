@@ -184,21 +184,21 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 | # | 모듈명 | 레퍼런스 파일 | 해금 조건 |
 |---|--------|--------------|-----------|
-| 1 | Setup & 첫 대화 | `references/module-01-setup.md` | 항상 열림 |
+| 1 | 작업환경 세팅 + CLAUDE.md | `references/module-01-setup-claudemd.md` | 항상 열림 |
 | 2 | 파일 다루기 + 스마트 조작법 | `references/module-02-files.md` | 모듈 1 완료 |
-| 3 | CLAUDE.md | `references/module-03-claudemd.md` | 모듈 2 완료 |
-| 4 | MCP + Context Sync | `references/module-06-mcp-context-sync.md` | 모듈 3 완료 |
-| 5 | Subagent | `references/module-05-subagent.md` | 모듈 4 완료 |
+| 3 | MCP + Context Sync | `references/module-06-mcp-context-sync.md` | 모듈 2 완료 |
+| 4 | Subagent | `references/module-05-subagent.md` | 모듈 3 완료 |
+| 5 | Skill 사용 | `references/module-04-skill.md` | 모듈 4 완료 |
 
 ### Advanced (모듈 6–10): Essential 완료 후 자유 선택
 
 | # | 모듈명 | 레퍼런스 파일 | 추천 선행 |
 |---|--------|--------------|-----------|
-| 6 | Skill 사용 | `references/module-04-skill.md` | — |
-| 7 | Plugin + Clarify | `references/module-07-plugin-clarify.md` | — |
-| 8 | skill-creator | `references/module-08-skill-creator.md` | 모듈 7 권장 |
-| 9 | Agent Teams | `references/module-09-agent-teams.md` | — |
-| 10 | 팀 전파 + GitHub + 지식 축적 | `references/module-10-team-deploy.md` | 모듈 9 권장 |
+| 6 | Plugin + Clarify | `references/module-07-plugin-clarify.md` | — |
+| 7 | Skill Creator | `references/module-08-skill-creator.md` | 모듈 6 권장 |
+| 8 | Agent Teams | `references/module-09-agent-teams.md` | — |
+| 9 | 팀 전파 + GitHub + 지식 축적 | `references/module-10-team-deploy.md` | 모듈 8 권장 |
+| 10 | 종합 실전 프로젝트 | `references/module-10-capstone.md` | — |
 
 ### 잠금 로직 상세
 
@@ -208,10 +208,10 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 **Advanced (6–10):**
 - **항상 열림** — Essential 완료 여부와 관계없이 자유롭게 선택 가능
-- 추천 선행이 있는 경우 (8→7, 10→9) 안내 메시지를 표시하되 **강제 잠금하지 않음**
+- 추천 선행이 있는 경우 (7→6, 9→8) 안내 메시지를 표시하되 **강제 잠금하지 않음**
 - 추천 선행 미완료 시 안내:
 
-      💡 모듈 7(Plugin + Clarify)을 먼저 학습하면 이해가 더 쉬워요!
+      💡 모듈 6(Plugin + Clarify)을 먼저 학습하면 이해가 더 쉬워요!
       그래도 바로 시작할까요? (예/아니오)
 
 ---
@@ -256,11 +256,11 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 | 배지 | 조건 | 키 |
 |------|------|-----|
 | 🌱 입문자 | 모듈 1 완료 | `beginner` |
-| 📄 실무 기초 | 모듈 3 완료 | `foundation` |
+| 📄 실무 기초 | 모듈 2 완료 | `foundation` |
 | 🏆 AI 실무자 | 모듈 5 완료 | `ai-practitioner` |
-| 📋 분석가 | 모듈 7 완료 | `analyst` |
-| ⚡ AI 빌더 | 모듈 8 완료 | `ai-builder` |
-| 🤝 AI 설계자 | 모듈 9 완료 | `ai-architect` |
+| 📋 분석가 | 모듈 6 완료 | `analyst` |
+| ⚡ AI 빌더 | 모듈 7 완료 | `ai-builder` |
+| 🤝 AI 설계자 | 모듈 8 완료 | `ai-architect` |
 | 🎖️ AI 전도사 | 모듈 10 완료 | `ai-evangelist` |
 
 배지 획득 시 축하 메시지:
@@ -312,18 +312,18 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
     📖 전체 목차
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━
     [Essential]
-    ✅ 1. Setup & 첫 대화
+    ✅ 1. 작업환경 세팅 + CLAUDE.md
     🔄 2. 파일 다루기 + 스마트 조작법
-    🔒 3. CLAUDE.md
-    🔒 4. Skill 사용
-    🔒 5. Subagent
+    🔒 3. MCP + Context Sync
+    🔒 4. Subagent
+    🔒 5. Skill 사용
 
     [Advanced] — Essential 완료 후 해금
-    🔒 6. MCP + Context Sync
-    🔒 7. Plugin + Clarify
-    🔒 8. skill-creator (7 권장)
-    🔒 9. Agent Teams
-    🔒 10. 팀 전파 + GitHub + 지식 축적 (9 권장)
+    🔒 6. Plugin + Clarify
+    🔒 7. Skill Creator (6 권장)
+    🔒 8. Agent Teams
+    🔒 9. 팀 전파 + GitHub + 지식 축적 (8 권장)
+    🔒 10. 종합 실전 프로젝트
 
 ### "그만" / "quit" 감지 시
 
@@ -343,47 +343,50 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 ## 7. 모듈별 특수 규칙
 
-### 모듈 1: Setup & 첫 대화
+### 모듈 1: 작업환경 세팅 + CLAUDE.md
 
-- **퀴즈 없음** — Phase B에서 퀴즈를 출제하지 않는다.
-- Phase B에서는 완료 확인만 수행:
+- Phase B에서는 퀴즈(CLAUDE.md 관련)를 출제한다.
+- Phase B 완료 확인 시:
 
-      ✅ 모듈 1 완료! Claude Code를 성공적으로 설치하고 첫 대화를 나누었습니다.
+      ✅ 모듈 1 완료! Claude Code를 성공적으로 설치하고 CLAUDE.md까지 설정했습니다.
 
-- `quiz_score`와 `quiz_total`은 모두 0으로 기록한다.
 - LEADER-TIP은 정상적으로 전달한다.
 
-### 모듈 6: Skill 사용
+### 모듈 5: Skill 사용
 
 - EXECUTE 단계에서 **Content Digest 스킬 체험**을 포함한다.
 - 학습자가 실제 URL이나 문서를 제공하면 요약 실습을 진행한다.
 
-### 모듈 9: Agent Teams (3개 서브스텝)
+### 모듈 8: Agent Teams (3개 서브스텝)
 
-모듈 9는 3개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
-
-| 서브스텝 | 내용 | 레퍼런스 섹션 |
-|---------|------|--------------|
-| 9-1 | 제안서 파이프라인 TF 구성 | `module-09-agent-teams.md` 내 실습 9-1 |
-| 9-2 | 의사결정 검증 | `module-09-agent-teams.md` 내 실습 9-2 |
-| 9-3 | 확장 설계 | `module-09-agent-teams.md` 내 실습 9-3 |
-
-진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"9-1"`).
-모듈 9 전체 완료는 9-3 Phase B 완료 시점이다.
-
-### 모듈 10: 팀 전파 + GitHub + 지식 축적 (4개 서브스텝)
-
-모듈 10은 4개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
+모듈 8은 3개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
 
 | 서브스텝 | 내용 | 레퍼런스 섹션 |
 |---------|------|--------------|
-| 10-1 | Compound + Session Wrap | `module-10-team-deploy.md` 내 실습 10-1 |
-| 10-2 | GitHub 기초 | `module-10-team-deploy.md` 내 실습 10-2 |
-| 10-3 | 팀 스킬 배포 | `module-10-team-deploy.md` 내 실습 10-3 |
-| 10-4 | 팀 온보딩 설계 | `module-10-team-deploy.md` 내 실습 10-4 |
+| 8-1 | 제안서 파이프라인 TF 구성 | `module-09-agent-teams.md` 내 실습 8-1 |
+| 8-2 | 의사결정 검증 | `module-09-agent-teams.md` 내 실습 8-2 |
+| 8-3 | 확장 설계 | `module-09-agent-teams.md` 내 실습 8-3 |
 
-진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"10-3"`).
-모듈 10 전체 완료는 10-4 Phase B 완료 시점이다.
+진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"8-1"`).
+모듈 8 전체 완료는 8-3 Phase B 완료 시점이다.
+
+### 모듈 9: 팀 전파 + GitHub + 지식 축적 (4개 서브스텝)
+
+모듈 9는 4개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
+
+| 서브스텝 | 내용 | 레퍼런스 섹션 |
+|---------|------|--------------|
+| 9-1 | Compound + Session Wrap | `module-10-team-deploy.md` 내 실습 9-1 |
+| 9-2 | GitHub 기초 | `module-10-team-deploy.md` 내 실습 9-2 |
+| 9-3 | 팀 스킬 배포 | `module-10-team-deploy.md` 내 실습 9-3 |
+| 9-4 | 팀 온보딩 설계 | `module-10-team-deploy.md` 내 실습 9-4 |
+
+진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"9-3"`).
+모듈 9 전체 완료는 9-4 Phase B 완료 시점이다.
+
+### 모듈 10: 종합 실전 프로젝트
+
+- **퀴즈 없음** — 프로젝트 완성이 평가. Phase B에서는 프로젝트 완료 확인만 수행.
 
 ---
 
@@ -406,7 +409,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
     ## LEADER-TIP
     리더 관점에서의 활용 팁. 팀 운영/전파 관점.
 
-모듈 9, 10은 각 서브스텝(STEP-1 ~ STEP-4)별로 위 섹션을 반복한다.
+모듈 8, 9는 각 서브스텝(STEP-1 ~ STEP-4)별로 위 섹션을 반복한다.
 
 ---
 
