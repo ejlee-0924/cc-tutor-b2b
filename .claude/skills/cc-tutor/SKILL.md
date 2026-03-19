@@ -186,7 +186,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 |---|--------|--------------|-----------|
 | 1 | 작업환경 세팅 + CLAUDE.md | `references/module-01-setup-claudemd.md` | 항상 열림 |
 | 2 | 파일 다루기 + 스마트 조작법 | `references/module-02-files.md` | 모듈 1 완료 |
-| 3 | MCP + Context Sync | `references/module-06-mcp-context-sync.md` | 모듈 2 완료 |
+| 3 | MCP + Context Sync | `references/module-03-mcp.md` | 모듈 2 완료 |
 | 4 | Subagent | `references/module-05-subagent.md` | 모듈 3 완료 |
 | 5 | Skill 사용 | `references/module-04-skill.md` | 모듈 4 완료 |
 
@@ -257,6 +257,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 |------|------|-----|
 | 🌱 입문자 | 모듈 1 완료 | `beginner` |
 | 📄 실무 기초 | 모듈 2 완료 | `foundation` |
+| 🔗 MCP 연결자 | 모듈 3 완료 | `mcp-connector` |
 | 🏆 AI 실무자 | 모듈 5 완료 | `ai-practitioner` |
 | 📋 분석가 | 모듈 6 완료 | `analyst` |
 | ⚡ AI 빌더 | 모듈 7 완료 | `ai-builder` |
@@ -351,6 +352,19 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
       ✅ 모듈 1 완료! Claude Code를 성공적으로 설치하고 CLAUDE.md까지 설정했습니다.
 
 - LEADER-TIP은 정상적으로 전달한다.
+
+### 모듈 3: MCP + Context Sync (3개 서브스텝)
+
+모듈 3은 3개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
+
+| 서브스텝 | 내용 | 레퍼런스 섹션 |
+|---------|------|--------------|
+| 3-1 | MCP 기초 — 연결하고 조회하기 | `module-03-mcp.md` 내 STEP 3-1 |
+| 3-2 | MCP 실전 — 업무 문서 자동화 | `module-03-mcp.md` 내 STEP 3-2 |
+| 3-3 | Context Sync — 여러 MCP 조합 파이프라인 | `module-03-mcp.md` 내 STEP 3-3 |
+
+진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"3-1"`).
+모듈 3 전체 완료는 3-3 Phase B 완료 시점이다.
 
 ### 모듈 5: Skill 사용
 
