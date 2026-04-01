@@ -12,12 +12,22 @@ npx skills add ejlee-0924/cc-tutor-b2b
 
 > 또는 이 저장소를 클론하여 `.claude/skills/cc-tutor/` 폴더를 프로젝트에 복사해도 됩니다.
 
-### 2. 조직도 파일 준비 (선택)
+### 2. 학습환경 셋업
+
+클론한 폴더에서 셋업 스크립트를 실행합니다:
+
+```bash
+./setup.sh
+```
+
+이 스크립트가 학습에 필요한 글로벌 스킬(/my-session-wrap, /my-context-sync, /my-content-fetch 등)을 자동으로 설치합니다.
+
+### 3. 조직도 파일 준비 (선택)
 
 개인화된 학습을 위해 `~/work/docs/org-context.md`에 조직도를 작성합니다.
 없어도 학습은 가능하며, 이름/팀/직책을 수동으로 입력할 수 있습니다.
 
-### 3. 학습 시작
+### 4. 학습 시작
 
 Claude Code에서 아래 중 하나를 입력하세요:
 
