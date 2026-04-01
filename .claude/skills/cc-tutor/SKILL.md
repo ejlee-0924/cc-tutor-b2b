@@ -377,9 +377,9 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 | 서브스텝 | 내용 | 레퍼런스 섹션 |
 |---------|------|--------------|
-| 8-1 | 제안서 파이프라인 TF 구성 | `module-09-agent-teams.md` 내 실습 8-1 |
-| 8-2 | 의사결정 검증 | `module-09-agent-teams.md` 내 실습 8-2 |
-| 8-3 | 확장 설계 | `module-09-agent-teams.md` 내 실습 8-3 |
+| 8-1 | Agent Teams로 파이프라인 TF 구성 | `module-09-agent-teams.md` 내 STEP 8-1 |
+| 8-2 | team-assemble로 동적 팀 실행 | `module-09-agent-teams.md` 내 STEP 8-2 |
+| 8-3 | team-orchestrator로 전문가 토론 | `module-09-agent-teams.md` 내 STEP 8-3 |
 
 진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"8-1"`).
 모듈 8 전체 완료는 8-3 Phase B 완료 시점이다.
