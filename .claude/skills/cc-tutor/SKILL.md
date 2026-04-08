@@ -190,15 +190,13 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 | 4 | Subagent | `references/module-05-subagent.md` | 모듈 3 완료 |
 | 5 | Skill 사용 | `references/module-04-skill.md` | 모듈 4 완료 |
 
-### Advanced (모듈 6–10): Essential 완료 후 자유 선택
+### Advanced (모듈 6–8): 자유 선택
 
 | # | 모듈명 | 레퍼런스 파일 | 추천 선행 |
 |---|--------|--------------|-----------|
 | 6 | Plugin + Clarify | `references/module-07-plugin-clarify.md` | — |
-| 7 | Skill Creator | `references/module-08-skill-creator.md` | 모듈 6 권장 |
-| 8 | Agent Teams | `references/module-09-agent-teams.md` | — |
-| 9 | 팀 전파 + GitHub + 지식 축적 | `references/module-10-team-deploy.md` | 모듈 8 권장 |
-| 10 | 종합 실전 프로젝트 | `references/module-10-capstone.md` | — |
+| 7 | Agent Teams | `references/module-09-agent-teams.md` | — |
+| 8 | 팀 전파 + GitHub + 지식 축적 | `references/module-10-team-deploy.md` | 모듈 7 권장 |
 
 ### 잠금 로직 상세
 
@@ -206,12 +204,12 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 - **항상 열림** — 순서 권장이지만 자유롭게 선택 가능
 - 순서대로 학습하면 RFP 기반 연속 실습(모듈 2→3→4→5)의 흐름을 따라갈 수 있음을 안내
 
-**Advanced (6–10):**
+**Advanced (6–8):**
 - **항상 열림** — Essential 완료 여부와 관계없이 자유롭게 선택 가능
-- 추천 선행이 있는 경우 (7→6, 9→8) 안내 메시지를 표시하되 **강제 잠금하지 않음**
+- 추천 선행이 있는 경우 (8→7) 안내 메시지를 표시하되 **강제 잠금하지 않음**
 - 추천 선행 미완료 시 안내:
 
-      💡 모듈 6(Plugin + Clarify)을 먼저 학습하면 이해가 더 쉬워요!
+      💡 모듈 7(Agent Teams)을 먼저 학습하면 이해가 더 쉬워요!
       그래도 바로 시작할까요? (예/아니오)
 
 ---
@@ -260,9 +258,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 | 🔗 MCP 연결자 | 모듈 3 완료 | `mcp-connector` |
 | 🏆 AI 실무자 | 모듈 5 완료 | `ai-practitioner` |
 | 📋 분석가 | 모듈 6 완료 | `analyst` |
-| ⚡ AI 빌더 | 모듈 7 완료 | `ai-builder` |
-| 🤝 AI 설계자 | 모듈 8 완료 | `ai-architect` |
-| 🎖️ AI 전도사 | 모듈 10 완료 | `ai-evangelist` |
+| 🤝 AI 설계자 | 모듈 7 완료 | `ai-architect` |
 
 배지 획득 시 축하 메시지:
 
@@ -274,7 +270,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 
 - 모듈 1: `"in_progress"`
 - 모듈 2–5: `"locked"`
-- 모듈 6–10: `"locked"`
+- 모듈 6–8: `"locked"`
 
 ---
 
@@ -319,12 +315,10 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
     🔒 4. Subagent
     🔒 5. Skill 사용
 
-    [Advanced] — Essential 완료 후 해금
+    [Advanced]
     🔒 6. Plugin + Clarify
-    🔒 7. Skill Creator (6 권장)
-    🔒 8. Agent Teams
-    🔒 9. 팀 전파 + GitHub + 지식 축적 (8 권장)
-    🔒 10. 종합 실전 프로젝트
+    🔒 7. Agent Teams
+    🔒 8. 팀 전파 + GitHub + 지식 축적 (7 권장)
 
 ### "그만" / "quit" 감지 시
 
@@ -371,36 +365,32 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
 - EXECUTE 단계에서 **Content Digest 스킬 체험**을 포함한다.
 - 학습자가 실제 URL이나 문서를 제공하면 요약 실습을 진행한다.
 
-### 모듈 8: Agent Teams (3개 서브스텝)
+### 모듈 7: Agent Teams (3개 서브스텝)
 
-모듈 8은 3개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
-
-| 서브스텝 | 내용 | 레퍼런스 섹션 |
-|---------|------|--------------|
-| 8-1 | Agent Teams로 파이프라인 TF 구성 | `module-09-agent-teams.md` 내 STEP 8-1 |
-| 8-2 | team-assemble로 동적 팀 실행 | `module-09-agent-teams.md` 내 STEP 8-2 |
-| 8-3 | team-orchestrator로 전문가 토론 | `module-09-agent-teams.md` 내 STEP 8-3 |
-
-진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"8-1"`).
-모듈 8 전체 완료는 8-3 Phase B 완료 시점이다.
-
-### 모듈 9: 팀 전파 + GitHub + 지식 축적 (4개 서브스텝)
-
-모듈 9는 4개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
+모듈 7은 3개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
 
 | 서브스텝 | 내용 | 레퍼런스 섹션 |
 |---------|------|--------------|
-| 9-1 | Compound + Session Wrap | `module-10-team-deploy.md` 내 실습 9-1 |
-| 9-2 | GitHub 기초 | `module-10-team-deploy.md` 내 실습 9-2 |
-| 9-3 | 팀 스킬 배포 | `module-10-team-deploy.md` 내 실습 9-3 |
-| 9-4 | 팀 온보딩 설계 | `module-10-team-deploy.md` 내 실습 9-4 |
+| 7-1 | Agent Teams로 파이프라인 TF 구성 | `module-09-agent-teams.md` 내 STEP 7-1 |
+| 7-2 | team-assemble로 동적 팀 실행 | `module-09-agent-teams.md` 내 STEP 7-2 |
+| 7-3 | team-orchestrator로 전문가 토론 | `module-09-agent-teams.md` 내 STEP 7-3 |
 
-진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"9-3"`).
-모듈 9 전체 완료는 9-4 Phase B 완료 시점이다.
+진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"7-1"`).
+모듈 7 전체 완료는 7-3 Phase B 완료 시점이다.
 
-### 모듈 10: 종합 실전 프로젝트
+### 모듈 8: 팀 전파 + GitHub + 지식 축적 (4개 서브스텝)
 
-- **퀴즈 없음** — 프로젝트 완성이 평가. Phase B에서는 프로젝트 완료 확인만 수행.
+모듈 8은 4개 서브스텝으로 구성된다. 각 서브스텝마다 Phase A → Phase B를 독립 실행한다.
+
+| 서브스텝 | 내용 | 레퍼런스 섹션 |
+|---------|------|--------------|
+| 8-1 | Compound + Session Wrap | `module-10-team-deploy.md` 내 실습 8-1 |
+| 8-2 | GitHub 기초 | `module-10-team-deploy.md` 내 실습 8-2 |
+| 8-3 | 팀 스킬 배포 | `module-10-team-deploy.md` 내 실습 8-3 |
+| 8-4 | 팀 온보딩 설계 | `module-10-team-deploy.md` 내 실습 8-4 |
+
+진도 기록 시 `last_step`에 서브스텝 번호를 기록한다 (예: `"8-3"`).
+모듈 8 전체 완료는 8-4 Phase B 완료 시점이다.
 
 ---
 
@@ -423,7 +413,7 @@ Phase A 종료 문구 (반드시 이 문장으로 끝낸다):
     ## LEADER-TIP
     리더 관점에서의 활용 팁. 팀 운영/전파 관점.
 
-모듈 8, 9는 각 서브스텝(STEP-1 ~ STEP-4)별로 위 섹션을 반복한다.
+모듈 7, 8은 각 서브스텝별로 위 섹션을 반복한다.
 
 ---
 
